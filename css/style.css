@@ -1,20 +1,7 @@
 /* Box Model Hack */
 * {
      box-sizing: border-box;
-}
-
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
-
-.clear {
-	clear: both;
+     margin: 0;
 }
 
 html, body {
@@ -24,10 +11,6 @@ html, body {
 /******************************************
 /* BASE STYLES
 /*******************************************/
-* {
-     margin: 0;
-}
-
 a {
      text-decoration: none;
      font-weight:700;
@@ -45,7 +28,7 @@ svg {
 body {
      font-family: 'Red Hat Display', sans-serif;
      font-size: 16px;
-     background-image: url(/Projects/Order-Summary-Component/images/pattern-background-desktop.svg);
+     background-image: url(../images/pattern-background-desktop.svg);
      background-size: 100%;
      background-repeat: no-repeat;
      background-color: hsl(225, 100%, 94%);
