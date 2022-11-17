@@ -1,0 +1,177 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+html, body {
+     height: 100%;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+* {
+     margin: 0;
+}
+
+a {
+     text-decoration: none;
+     font-weight:700;
+}
+
+p {
+     font-weight: 500;
+}
+
+svg {
+     display: block;
+     max-width: 100%;
+}
+     
+body {
+     font-family: 'Red Hat Display', sans-serif;
+     font-size: 16px;
+     background-image: url(/Projects/Order-Summary-Component/images/pattern-background-desktop.svg);
+     background-size: 100%;
+     background-repeat: no-repeat;
+     background-color: hsl(225, 100%, 94%);
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.card {
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+article {
+     max-width: 350px;
+     border-radius: 5%;
+     background: white;
+     text-align: center;
+     box-shadow: 0 20px 50px hsl(224, 23%, 75%)
+}
+
+article img {
+     width: 100%;
+     border-radius: 20px 20px 0 0;
+}
+
+article h1 {
+     padding-top: 2rem;
+     font-size: 1.4rem;
+     font-weight: 900;
+}
+
+article p {
+     padding: 1rem 3rem;
+     color: hsl(224, 23%, 55%);
+     font-size: .8rem;
+     line-height: 1.5;
+}
+
+.plan {
+     display: flex;
+     border-radius: 10px;
+     background: hsl(225, 100%, 98%);
+     max-width: 80%;
+     align-items: center;
+     margin: 0 auto;
+}
+
+.icon {
+     padding: 1rem;
+}
+
+.icon img {
+     width: 2.5rem;
+}
+
+.price {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-right: 4.5rem;
+}
+
+.plan .price h2 {
+     font-size: .8rem;
+     font-weight: 900;
+}
+
+.plan .price p {
+     padding: 5%;
+}
+
+.plan a {
+     text-decoration: underline;
+     font-size: .8rem;
+     color: hsl(245, 75%, 52%);
+}
+
+.plan a:hover {
+     text-decoration: none;
+     color: hsl(240, 80%, 70%);
+}
+
+.btn {
+     padding-top: 1.5rem;
+     padding-bottom: 1.5rem;
+}
+
+.paymentBtn {
+     width: 80%;
+     padding: .8rem 0;
+     cursor: pointer;
+     background: hsl(245, 75%, 52%);
+     border: none;
+     border-radius: 10px;
+     color: white;
+     font-weight: 700;
+     font-size: .7rem;
+     box-shadow: 0 10px 20px hsl(224, 23%, 80%);
+}
+
+.paymentBtn:hover {
+     background: hsl(240, 80%, 70%);
+}
+
+.cancel {
+     padding-bottom: 2.5rem;
+}
+
+.cancel a {
+     color: hsl(224, 23%, 55%);
+     font-size: .8rem;
+}
+
+.cancel a:hover {
+     color: hsl(223, 47%, 23%);
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.attribution {
+     width: 100%;
+     font-size: .6rem;
+     padding-bottom: 1rem;
+     padding-left: 1rem;
+}
